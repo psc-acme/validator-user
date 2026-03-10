@@ -1,0 +1,42 @@
+{
+    "name": "psc-acme/validator-user",
+    "description": "Package validator-user for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ValidatorUser\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "nette/utils": "^4.0",
+        "psr/log": "^3.0",
+        "symfony/dotenv": "^7.0",
+        "aws/aws-sdk-php": "^3.332",
+        "psc-acme/module-auth": "^1.0",
+        "psc-acme/transformer-auth": "^1.0",
+        "psc-acme/scheduler-auth": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "symfony/phpunit-bridge": "^7.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
